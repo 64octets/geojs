@@ -42,8 +42,7 @@ class MidasHandler(object):
         request = http.post(
             method_url,
             params=parameters,
-            allow_redirects=True,
-            verify=False
+            allow_redirects=True
         )
         try:
             response = request.json()
